@@ -49,8 +49,7 @@ public class BubbleSort {
    *    }
    *
    */
-  private static <E extends Comparable<E>> void sortInternal(E[] inputArray
-      , int size){
+  private static <E extends Comparable<E>> void sortInternal(E[] inputArray, int size){
 
     for(int i=size-1; i>=0; i--){
       for(int j=0; j < i; j++){
