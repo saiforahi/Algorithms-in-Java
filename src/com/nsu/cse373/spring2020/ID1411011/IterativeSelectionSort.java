@@ -18,20 +18,19 @@ public class IterativeSelectionSort {
    * but it must take generic type input to be able to sort any array
    * containing data that can be compared. Look at BubbleSort class for
    */
-  @SuppressWarnings("unchecked")
-private static <E extends Comparable<E>> void sortInternal(E[] inputArray, int size){
+  private static <E extends Comparable<E>> void sortInternal(E[] inputArray, int size){
     //
 	  int minIndex;
-	  for(int i=0;i<size-1;i++) {
-		  minIndex=i;
-		  for(int j=i+1;j<size;j++) {
-			  if(inputArray[minIndex].compareTo(inputArray[j])<0) {			//checking if value less then minimum value or not 
-				  minIndex=j;											
+	  for(int index1=0;index1<size-1;index1++) {
+		  minIndex=index1;
+		  for(int index2=index1+1;index2<size;index2++) {
+			  if(inputArray[minIndex].compareTo(inputArray[index2])>0) {			//checking if value less then minimum value or not 
+				  minIndex=index2;											
 				  
 			  }
 		  }
-		  E temp= inputArray[i];
-		  inputArray[i]=inputArray[minIndex];    //swapping 
+		  E temp= inputArray[index1];
+		  inputArray[index1]=inputArray[minIndex];    //swapping 
 		  inputArray[minIndex]= temp;
 		  SortHelper.print(inputArray,size);
 	  }
