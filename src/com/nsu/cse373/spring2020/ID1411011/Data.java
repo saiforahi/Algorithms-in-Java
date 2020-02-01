@@ -30,6 +30,9 @@ public class Data implements Comparable<Data> {
     return stringBuilder.toString();
   }
   
+  public int get_index() {
+	  return this.index;
+  }
   /**
    * To ensure that two object of Data type are comparable,
    * Comparable interface has to be implemented. Comparable interface
