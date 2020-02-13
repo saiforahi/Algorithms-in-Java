@@ -48,6 +48,6 @@ public class Data implements Comparable<Data> {
     else if(this.index < o.index)
       return -1;
     else
-      return 0;
+      return this.text.compareTo(o.text);
   }
 }

@@ -36,7 +36,7 @@ public class MergeSort {
   
   public static <E extends Comparable<E>> void ArrayMerger( E[] inputArray, int low, int mid, int high)
   {
-  	@SuppressWarnings("unchecked")
+	@SuppressWarnings("unchecked")
 	E[] temp = (E[]) new Data[inputArray.length];//temporary merger array
   	int i = low, j = mid + 1;//i is for left-hand,j is for right-hand
   	int k = 0;//k is for the temporary array

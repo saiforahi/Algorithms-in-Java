@@ -9,6 +9,8 @@ public class SortRunner {
     recursiveSelectionSortTester();
     iterativeSelectionSortTester();
     mergeSortTester();
+    heapSortTester();
+    quickSortTester();
   }
   
   private static void bubbleSortTester(){
@@ -21,9 +23,10 @@ public class SortRunner {
     };
     BubbleSort.bubbleSort(dataArr);
   }
+  
   private static void recursiveInsertionSortTester(){
     Data[] dataArr = {
-    	new Data(18,"A")
+        new Data(18,"A")
         , new Data(26,"B")
         , new Data(32,"C")
         , new Data(6,"D")
@@ -62,6 +65,7 @@ public class SortRunner {
 
     IterativeInsertionSort.iterativeInsertionSort(dataArr);
   }
+  
   private static void recursiveSelectionSortTester(){
     Data[] dataArr = {
         new Data(18,"A")
@@ -104,6 +108,7 @@ public class SortRunner {
 
     IterativeSelectionSort.iterativeSelectionnSort(dataArr);
   }
+  
   private static void mergeSortTester(){
     Data[] dataArr = {
         new Data(18,"A")
@@ -126,4 +131,46 @@ public class SortRunner {
     MergeSort.mergeSort(dataArr);
   }
   
+  private static void heapSortTester(){
+    Data[] dataArr = {
+        new Data(18,"A")
+        , new Data(26,"B")
+        , new Data(32,"C")
+        , new Data(6,"D")
+        , new Data(43,"E")
+        , new Data(15,"F")
+        , new Data(9,"G")
+        , new Data(1,"H")
+        , new Data(22,"I")
+        , new Data(43,"J")
+        , new Data(19,"K")
+        , new Data(55,"L")
+        , new Data(37,"M")
+        , new Data(43,"L")
+        , new Data(99,"O")
+    };
+    
+    HeapSort.heapSort(dataArr);
+  }
+  private static void quickSortTester(){
+    Data[] dataArr = {
+        new Data(18,"A")
+        , new Data(26,"B")
+        , new Data(32,"C")
+        , new Data(6,"D")
+        , new Data(43,"E")
+        , new Data(15,"F")
+        , new Data(9,"G")
+        , new Data(1,"H")
+        , new Data(22,"I")
+        , new Data(43,"J")
+        , new Data(19,"K")
+        , new Data(55,"L")
+        , new Data(37,"M")
+        , new Data(43,"L")
+        , new Data(99,"O")
+    };
+    
+    QuickSort.quickSort(dataArr);
+  }
 }

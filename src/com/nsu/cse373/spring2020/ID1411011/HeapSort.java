@@ -7,8 +7,10 @@ public class HeapSort {
     System.out.println("------------------------");
     /*
       Call your internal sorting method here
-      sortInternal(inputArray, inputArray.length);
+      heapSortInternal(inputArray);
+
     */
+    SortHelper.print(inputArray,inputArray.length);
     System.out.println("------------------------");
   }
   
@@ -17,8 +19,7 @@ public class HeapSort {
    * but it must take generic type input to be able to sort any array
    * containing data that can be compared. Look at BubbleSort class for
    */
-  private static <E extends Comparable<E>> void sortInternal(E[] inputArray
-      , int size){
-    //
+  private static <E extends Comparable<E>> void heapSortInternal(E[] inputArray){
+	  
   }
 }
